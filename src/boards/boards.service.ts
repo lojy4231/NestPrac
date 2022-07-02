@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { Board } from './board.model';
 
 @Injectable()
 export class BoardsService {
-    // private를 쓰는 이유는 다른 컴포넌트에서 BoardsService에 접근해서 수정하는것을 방지하기 위해
-    private boards = [];
+    private boards: Board[] = [];
 
-    getAllBoards() {
+    getAllBoards(): Board[] {
         return this.boards;
     }
 }
