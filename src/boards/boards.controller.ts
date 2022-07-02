@@ -14,6 +14,7 @@ export class BoardsController {
 
     @Get(':id')
     getBoardById(@Param('id') id: string): Board {
+        console.log(id);
         return this.boardsService.getBoardById(id);
     }
 

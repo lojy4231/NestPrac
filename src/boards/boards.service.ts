@@ -13,7 +13,7 @@ export class BoardsService {
 
     createBoard(createBoardDto: CreateBoardDto) {
         const { title, description } = createBoardDto;
-        const board:Board = {
+        const board: Board = {
             id: uuid(),
             title,
             description,
@@ -27,6 +27,6 @@ export class BoardsService {
     }
 
     deleteBoard(id: string): void {
-        this.boards = this.boards.filter((board) => board.id !== id );
+        this.boards = this.boards.filter((board) => board.id !== id);
     }
 }
