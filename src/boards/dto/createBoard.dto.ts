@@ -1,5 +1,4 @@
-export interface Board {
-    id: string;
+export class CreateBoardDto {
     title: string;
     description: string;
 }
